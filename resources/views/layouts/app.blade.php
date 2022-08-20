@@ -52,7 +52,7 @@
                         </div>
                     </div> -->
                 
-                <nav class="main-navbar" style="background-color: #A9B2FFF7 ">
+                <nav class="main-navbar" style="background-color: #A9B2FFF7; box-shadow: 5px 5px 5px 0px rgba(0,0,0,25%);">
                     <div class="container m-0">
                         <ul>
                             <li class="menu-item  ">
@@ -72,7 +72,7 @@
 
             </header>
 
-            <div class="content-wrapper container" style="margin-left: 0px; margin-right: 0px">
+            <div class="content-wrapper container" style="margin-left: 0px; padding-left: 0px; max-width: 1300px;">
 
                 <!-- <div class="page-heading">
                     <h3>Horizontal Layout</h3>

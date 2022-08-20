@@ -3,8 +3,8 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-3 mx-4"> 
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="col-md-3 p-0">
+        <div id="carouselExampleControls" class="carousel slide mx-4" data-bs-ride="carousel" style="display: block; position: fixed;">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                         <img src="assets/images/post1.png" class="d-block w-100" alt="...">
@@ -24,19 +24,83 @@
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
-                </div>
-                
-            
-        </div>
-        <div class="col-md-8 ">
-            <div class="card d-flex flex-column flex-nowrap overflow-auto" style="height: 460px;">
-                <div class="card-body">
-                <div>
-                        <textarea name="notes" cols="70" rows="5"></textarea>
-                    </div>
-                </div>
+                </div>        
             </div>
-        </div>
+
+            <div class="col-9">
+                    <div class="card">
+                        <div class="card-body">
+                            <form method="post" action="{{ route('menfess.store') }}">
+                                <div class="form-group">
+                                    @csrf
+                                    <table style="border-collapse: collapse; width: 100%;" border="0">
+<tbody>
+<tr>
+<td style="width: 100%;">
+<table style="border-collapse: collapse; width: 100%; height: 134px;" border="1">
+<tbody>
+<tr style="height: 44px;">
+<td style="width: 100%; height: 44px;">
+<table style="border-collapse: collapse; width: 100%;" border="0">
+<tbody>
+<tr>
+<td style="width: 9.2079%;"><img src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg" alt="" width="36" /></td>
+<td style="width: 90.7921%;">Anonymous</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr style="height: 90px;">
+<td style="width: 100%; height: 90px;">
+<textarea cols="107" rows="5" readonly="readonly" style="border: none;">
+From : secret
+To : ank bc yng jga bc hari senin sma selasa
+gpke jilbab rambutny digerai
+Message : cantik nomor wa nya brp? Yng tau ig nya spill dong
+</textarea>
+
+<textarea cols="107" rows="5" readonly="readonly" style="border: none;">
+From : secret
+To : ank bc yng jga bc hari senin sma selasa
+gpke jilbab rambutny digerai
+Message : cantik nomor wa nya brp? Yng tau ig nya spill dong
+</textarea>
+<textarea cols="107" rows="5" readonly="readonly" style="border: none;">
+From : secret
+To : ank bc yng jga bc hari senin sma selasa
+gpke jilbab rambutny digerai
+Message : cantik nomor wa nya brp? Yng tau ig nya spill dong
+</textarea>
+<textarea cols="107" rows="5" readonly="readonly" style="border: none;">
+From : secret
+To : ank bc yng jga bc hari senin sma selasa
+gpke jilbab rambutny digerai
+Message : cantik nomor wa nya brp? Yng tau ig nya spill dong
+</textarea>
+</td>
+</tr>
+</tbody>
+</table>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+                                <div class="form-group">
+                                <textarea cols="106"></textarea></td>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-success" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+             
     </div>
 </div>
 @endsection

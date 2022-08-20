@@ -14,7 +14,10 @@ class MenfessController extends Controller
      */
     public function index()
     {
-        //
+        $menfesses = Menfess::all();
+        $menfesses = Menfess::with('menfess')->get();
+        
+        return view('landing', compact('menfesses'));
     }
 
     /**
@@ -24,7 +27,7 @@ class MenfessController extends Controller
      */
     public function create()
     {
-        //
+        return view('menfess');
     }
 
     /**
@@ -35,7 +38,12 @@ class MenfessController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $menfess = new Menfess;
+        $menfess->title = $request->get('menfess');
+    
+        $menfess->save();
+
+        return redirect('menfesses');
     }
 
     /**
@@ -46,7 +54,9 @@ class MenfessController extends Controller
      */
     public function show(Menfess $menfess)
     {
-        //
+        $menfess = Menfess::find($menfess);
+
+        return view('show', compact('menfess'));
     }
 
     /**

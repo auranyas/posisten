@@ -17,4 +17,5 @@ class Menfess extends Model
         'id',
         'menfess',
     ];
+
 }
