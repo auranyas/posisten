@@ -58,7 +58,6 @@
                             <li class="menu-item  ">
                                 <div class="logo">
                                     <img src="assets/images/Posisten.png" alt="Logo">
-                                    <img src="assets/images/admin.png" style="text-align: right;" alt="Logo" >
                                 </div>  
                             </li>
                         </ul>
