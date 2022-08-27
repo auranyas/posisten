@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\KomentarController;
+use App\Http\Controllers\MenfessController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -14,15 +16,21 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    return view('landing');
+
+Route::get('/admin', function (){
+    return view('admin');
 });
 
-Route::get('homes', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/komentar', function (){
+    return view('komentar');
+});
 
-Route::get('/menfess/create', 'MenfessController@create')->name('menfess.create');
-Route::post('/menfess/store', 'MenfessController@store')->name('menfess.store');
+Route::get('landing', [App\Http\Controllers\MenfessController::class, 'index'])->name('landing');
 
-Route::get('/menfesses', 'MenfessController@index')->name('menfesses');
-Route::get('/menfess/show/{id}', 'MenfessController@show')->name('menfess.show');
+Route::get('/menfess' , [MenfessController::class , 'landing']);
+Route::get('/menfess/{id}' , [MenfessController::class , 'show']);
+Route::post('/menfess/add' , [MenfessController::class , 'store']);
+// Route::post('/komentar/add', [KomentarController::class , 'store']);
+Route::post('/menfess/{id}/add-comment', [KomentarController::class , 'store']);
+
 Auth::routes();

@@ -30,7 +30,7 @@
             <div class="col-9">
                     <div class="card">
                         <div class="card-body">
-                            <form method="post" action="{{ route('menfess.store') }}">
+                            <form method="post" action="">
                                 <div class="form-group">
                                     @csrf
                                     <table style="border-collapse: collapse; width: 100%;" border="0">
@@ -79,7 +79,6 @@ gpke jilbab rambutny digerai
 Message : cantik nomor wa nya brp? Yng tau ig nya spill dong
 </textarea>
 </td>
-<td><img src="assets/images/xmark-solid.svg.png"></td>
 </tr>
 </tbody>
 </table>

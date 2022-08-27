@@ -14,10 +14,9 @@ class MenfessController extends Controller
      */
     public function index()
     {
-        $menfesses = Menfess::all();
-        $menfesses = Menfess::with('menfess')->get();
-        
-        return view('landing', compact('menfesses'));
+        $menfesses =  Menfess::get();
+
+        return view('landing' , compact('menfesses'));
     }
 
     /**
@@ -39,11 +38,11 @@ class MenfessController extends Controller
     public function store(Request $request)
     {
         $menfess = new Menfess;
-        $menfess->title = $request->get('menfess');
+        $menfess->menfess = $request->get('menfess');
     
         $menfess->save();
 
-        return redirect('menfesses');
+        return redirect()->back();
     }
 
     /**
@@ -52,11 +51,11 @@ class MenfessController extends Controller
      * @param  \App\Models\Menfess  $menfess
      * @return \Illuminate\Http\Response
      */
-    public function show(Menfess $menfess)
+    public function show($id)
     {
-        $menfess = Menfess::find($menfess);
+        $menfess = Menfess::find($id);
 
-        return view('show', compact('menfess'));
+        return view('komentar', compact('menfess'));
     }
 
     /**

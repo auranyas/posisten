@@ -16,11 +16,10 @@
 
 <body>
     <div id="app">
-        <div id="main" class="layout-horizontal position-relative">
-
-            <header class="mb-3 ">
-
-                <!-- <div class="container">
+        <div id="main" class="layout-horizontal">
+            <header class="mb-3">
+                
+                    <!-- <div class="container">
                         <div class="logo">
                             <a href="index.html"><img src="assets/images/logo/logo.svg" alt="Logo"></a>
                         </div>
@@ -52,17 +51,15 @@
                             </a>
                         </div>
                     </div> -->
-
-                <nav class="main-navbar"
-                    style="background-color: #A9B2FFF7; box-shadow: 5px 5px 5px 0px rgba(0,0,0,25%);">
+                
+                <nav class="main-navbar" style="background-color: #A9B2FFF7; box-shadow: 5px 5px 5px 0px rgba(0,0,0,25%);">
                     <div class="container m-0">
                         <ul>
                             <li class="menu-item  ">
                                 <div class="logo">
-                                    <a href="{{ url('/landing') }}"><img src="assets/images/Posisten.png" alt="Logo"></a>
-                                    <a href="{{ url('/admin') }}"><img src="assets/images/admin.png"
-                                            style="text-align: right;" alt="Logo"></a>
-                                </div>
+                                    <a href="{{ url('/landing') }}"><img src="/assets/images/Posisten.png" alt="Logo"></a>
+                                    <a href="{{ url('/admin') }}"><img src="/assets/images/admin.png" style="text-align: right;" alt="Logo" ></a>
+                                </div>  
                             </li>
                         </ul>
                         <!-- <ul>
@@ -72,14 +69,9 @@
                         </ul> -->
                     </div>
                 </nav>
-
+                
 
             </header>
-
-            <button type="button" class="btn btn-lg btn-floating position-fixed" data-bs-toggle="modal"
-                data-bs-target="#exampleModal" style="right: 0; bottom: 0; z-index: 10;">
-                <img src="assets/images/create.png">
-            </button>
 
             <div class="content-wrapper container" style="margin-left: 0px; padding-left: 0px; max-width: 1300px;">
 
@@ -108,12 +100,12 @@
             </footer> -->
         </div>
     </div>
-    <script src="assets/js/bootstrap.js"></script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/pages/horizontal-layout.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+    <script src="/assets/js/app.js"></script>
+    <script src="/assets/js/pages/horizontal-layout.js"></script>
 
-    <script src="assets/extensions/apexcharts/apexcharts.min.js"></script>
-    <script src="assets/js/pages/dashboard.js"></script>
+    <script src="/assets/extensions/apexcharts/apexcharts.min.js"></script>
+    <script src="/assets/js/pages/dashboard.js"></script>
 
 </body>
 
