@@ -31,7 +31,7 @@
                 </div>
             </div>
             {{-- @foreach ($komentars as $key => $komentar) --}}
-            <div class="col-9">
+            <div class="col-9" style="padding-left: 0;">
                 <div class="card">
                     <div class="card-body">
                         <form>

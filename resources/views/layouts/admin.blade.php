@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Horizontal - Mazer Admin Dashboard</title>
 
-    <link rel="stylesheet" href="assets/css/main/app.css">
-    <link rel="shortcut icon" href="assets/images/logo/favicon.svg" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/assets/css/main/app.css">
+    <link rel="shortcut icon" href="/assets/images/logo/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/logo/favicon.png" type="image/png">
 
-    <link rel="stylesheet" href="assets/css/shared/iconly.css">
+    <link rel="stylesheet" href="/assets/css/shared/iconly.css">
 
 </head>
 
 <body>
     <div id="app">
-        <div id="main" class="layout-horizontal">
-            <header class="mb-5">
-                
-                    <!-- <div class="container">
+        <div id="main" class="layout-horizontal position-relative">
+
+            <header class="mb-3 ">
+
+                <!-- <div class="container">
                         <div class="logo">
                             <a href="index.html"><img src="assets/images/logo/logo.svg" alt="Logo"></a>
                         </div>
@@ -51,14 +52,17 @@
                             </a>
                         </div>
                     </div> -->
-                
-                <nav class="main-navbar" style="background-color: #A9B2FFF7; box-shadow: 5px 5px 5px 0px rgba(0,0,0,25%);">
+
+                <nav class="main-navbar"
+                    style="background-color: #A9B2FFF7; box-shadow: 5px 5px 5px 0px rgba(0,0,0,25%);">
                     <div class="container m-0">
                         <ul>
                             <li class="menu-item  ">
                                 <div class="logo">
-                                    <img src="assets/images/Posisten.png" alt="Logo">
-                                </div>  
+                                    <a href="{{ url('/landing') }}"><img src="assets/images/Posisten.png" alt="Logo"></a>
+                                    <a href="{{ url('/admin') }}"><img src="assets/images/admin.png"
+                                            style="text-align: right;" alt="Logo"></a>
+                                </div>
                             </li>
                         </ul>
                         <!-- <ul>
@@ -68,9 +72,14 @@
                         </ul> -->
                     </div>
                 </nav>
-                
+
 
             </header>
+
+            <button type="button" class="btn btn-lg btn-floating position-fixed" data-bs-toggle="modal"
+                data-bs-target="#exampleModal" style="right: 0; bottom: 0; z-index: 10;">
+                <img src="assets/images/create.png">
+            </button>
 
             <div class="content-wrapper container" style="margin-left: 0px; padding-left: 0px; max-width: 1300px;">
 

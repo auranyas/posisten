@@ -31,51 +31,49 @@
                 </div>
             </div>
             @foreach ($menfesses as $key => $menfess)
-            <div class="col-9">
-                <div class="card">
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group">
-                                @csrf
-                                <table style="border-collapse: collapse; width: 100%; border: none;">
-                                    <tbody>
-                                        <tr>
-                                            <td style="width: 50%;">
-                                                <table style="border-collapse: collapse; width: 100%; height: 18px;"
-                                                    border="0">
-                                                    <tbody>
-                                                        <tr style="height: 18px;">
-                                                            <td style="width: 8.52633%; height: 18px;"><img
-                                                                    src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
-                                                                    alt="" width="36" /></td>
-                                                            <td style="width: 91.4737%; height: 18px;">Anonymous</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <textarea cols="90" rows="5" readonly="readonly" style="border: none; ">
+                <div class="col-9">
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    @csrf
+                                    <table style="border-collapse: collapse; width: 100%; border: none;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width: 50%;">
+                                                    <table style="border-collapse: collapse; width: 100%; height: 18px;"
+                                                        border="0">
+                                                        <tbody>
+                                                            <tr style="height: 18px;">
+                                                                <td style="width: 8.52633%; height: 18px;"><img
+                                                                        src="https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg"
+                                                                        alt="" width="36" /></td>
+                                                                <td style="width: 91.4737%; height: 18px;">Anonymous</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <textarea cols="90" rows="5" readonly="readonly" style="border: none; ">
 {{ $menfess->menfess }}
 </textarea>
 
-                                                        <tr>
-                                                            <td
-                                                                style="border-bottom: 1px solid black; padding-bottom: 6px;">
-                                                                <a href="{{ url('/menfess/' . $menfess->id) }}"><img
-                                                                        src="assets/images/message-solid.svg"
-                                                                        width="20">
-                                                            </td>
-                                                        </tr>
+                                            <tr>
+                                                <td style="border-bottom: 1px solid black; padding-bottom: 6px;">
+                                                    <a href="{{ url('/menfess/' . $menfess->id) }}"><img
+                                                            src="assets/images/message-solid.svg" width="20">
+                                                </td>
+                                            </tr>
             @endforeach
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                        </div>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
 
         <p>&nbsp;</p>
         <p>&nbsp;</p>
         <div>
             <tr>
-                
+
 
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                     aria-hidden="true">
@@ -100,12 +98,12 @@
                 </div>
             </tr>
         </div>
-    
-    </form>
-    
+
+        </form>
+
     </div>
-</div>
-</div>
+    </div>
+    </div>
     </div>
 
     </div>

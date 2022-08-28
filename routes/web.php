@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\KomentarController;
 use App\Http\Controllers\MenfessController;
 use Illuminate\Support\Facades\Route;
@@ -17,9 +18,7 @@ use Illuminate\Support\Facades\Auth;
 */
 
 
-Route::get('/admin', function (){
-    return view('admin');
-});
+Route::get('admin', [AdminController::class, 'index'])->name('admin');
 
 Route::get('/komentar', function (){
     return view('komentar');
@@ -32,5 +31,6 @@ Route::get('/menfess/{id}' , [MenfessController::class , 'show']);
 Route::post('/menfess/add' , [MenfessController::class , 'store']);
 // Route::post('/komentar/add', [KomentarController::class , 'store']);
 Route::post('/menfess/{id}/add-comment', [KomentarController::class , 'store']);
+Route::get('/menfess/delete/{id}' , [AdminController::class , 'destroy']);
 
 Auth::routes();
